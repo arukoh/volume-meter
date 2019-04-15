@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      .image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+      body {
+        background-color: rgba(255, 0, 0, 0.1);
+        animation: bg-color 1s infinite;
+      }
+      @keyframes bg-color {
+        0% {
+          background-color: rgba(255, 255, 255, 0.1);
+        }
+        20% {
+          background-color: rgba(255, 0, 0, 0.1);
+        }
+        40% {
+          background-color: rgba(0, 255, 0, 0.1);
+        }
+        60% {
+          background-color: rgba(0, 0, 255, 0.1);
+        }
+        80% {
+          background-color: rgba(255, 255, 0, 0.1);
+        }
+        100% {
+          background-color: rgba(0, 255, 255, 0.1);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      class="image"
+      src="https://media.giphy.com/media/POqeDPbvvzsT6/200.gif"
+    />
+  </body>
+</html>

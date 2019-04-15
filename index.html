@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>volume-meter</title>
+    <link rel="stylesheet" href="./bootstrap.min.css" />
+    <style>
+      ::-webkit-scrollbar {
+        display: none;
+      }
+      .container-fluid {
+        padding-top: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <input
+            type="range"
+            class="custom-range"
+            min="0"
+            max="1.0"
+            step="0.1"
+            id="warningLevel"
+          />
+        </div>
+      </div>
+      <div class="row">
+        <canvas id="chart"></canvas>
+      </div>
+    </div>
+
+    <script>
+      require("./config.js");
+      require("./renderer.js");
+    </script>
+  </body>
+</html>
